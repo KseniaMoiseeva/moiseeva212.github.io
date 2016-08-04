@@ -1,24 +1,71 @@
-﻿* {margin:0; padding:0; outline:none}
-body {font:10px Verdana,Arial; margin:25px; background:#fff url(images/bg.gif) repeat-x; color:#091f30}
+﻿
 
-.sortable {width:980px; border-left:1px solid #c6d5e1; border-top:1px solid #c6d5e1; border-bottom:none; margin:0 auto 15px}
-.sortable th {background:url(images/header-bg.gif); text-align:left; color:#cfdce7; border:1px solid #fff; border-right:none}
-.sortable th h3 {font-size:10px; padding:6px 8px 8px}
-.sortable td {padding:4px 6px 6px; border-bottom:1px solid #c6d5e1; border-right:1px solid #c6d5e1}
-.sortable .head h3 {background:url(images/sort.gif) 7px center no-repeat; cursor:pointer; padding-left:18px}
-.sortable .desc, .sortable .asc {background:url(images/header-selected-bg.gif)}
-.sortable .desc h3 {background:url(images/desc.gif) 7px center no-repeat; cursor:pointer; padding-left:18px}
-.sortable .asc h3 {background:url(images/asc.gif) 7px  center no-repeat; cursor:pointer; padding-left:18px}
-.sortable .head:hover, .sortable .desc:hover, .sortable .asc:hover {color:#fff}
-.sortable .evenrow td {background:#fff}
-.sortable .oddrow td {background:#ecf2f6}
-.sortable td.evenselected {background:#ecf2f6}
-.sortable td.oddselected {background:#dce6ee}
+#body {
+  margin: 10px;
 
-#controls {width:980px; margin:0 auto; height:20px}
-#perpage {float:left; width:200px}
-#perpage select {float:left; font-size:11px}
-#perpage span {float:left; margin:2px 0 0 5px}
-#navigation {float:left; width:580px; text-align:center}
-#navigation img {cursor:pointer}
-#text {float:left; width:200px; text-align:right; margin-top:2px}
+}
+
+ /*Верхнее меню*/
+
+ .header {
+    background-image: linear-gradient(#2d7898, #afe1f6);
+    font-size:16px;
+    width:100%;
+    position:relative;
+    overflow: hidden;
+    margin: 5px;
+ }
+
+.header li {
+    display:inline-block;
+    float: left;
+    list-style: none;
+    text-align:center;
+}
+
+.header a {
+    display: block;
+    color:#fff;
+    padding:0px 40px;
+    margin-left: -1px;
+    font-size:15px;
+    line-height:40px;
+    text-shadow:0.5px 0.866px 1px rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+
+.header a:hover {
+  background-color: #6cfbba;
+  border-right:1px solid #888;
+  border-left:1px solid #888;
+}
+
+.header ul {
+  margin: 0;
+}          
+
+.searchform {
+  float: left;
+  width: 85%;
+  margin: 5px;
+}
+
+.searchbutton {
+  float: right;
+  width: 10%;
+  margin: 5px;
+}
+
+.button-secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(66, 184, 221);
+  
+}
+
+#tabs {
+  clear: both;
+  margin: 5px;
+}
+
